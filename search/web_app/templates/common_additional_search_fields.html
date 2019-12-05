@@ -1,0 +1,43 @@
+{% if word_fields %}
+	{% for field in word_fields %}
+		{{ _('wordfield_' + field) | capitalize }}: <input type="text" class="search_input" name="{{ field }}1" id="{{ field }}1"><br>
+	{% endfor %}
+{% endif %}
+{% if sentence_meta and sentence_meta|length > 0 %}
+<hr class="separator">
+	{% for field in sentence_meta %}
+		{% if int_meta_fields and field in int_meta_fields %}
+		{{ _('metafield_' + field) | capitalize }}: <input type="number" class="search_input_num" name="sent_meta_{{ field }}_FR1" id="sent_meta_{{ field }}1"> &ndash;<input type="number" class="search_input_num" name="sent_meta_{{ field }}_TO1" id="sent_meta_{{ field }}1"><br>
+		{% elif field == 'sex' %}
+		{{ _('metafield_' + field) | capitalize }}: <select class="search_input" name="sent_meta_{{ field }}1" id="sent_meta_{{ field }}1">
+		<option value="">{{ _('any') }}</option>
+		<option value="f">{{ _('f') }}</option>
+		<option value="m">{{ _('m') }}</option>
+		</select><br>
+        {% elif field == 'speaker' %}
+		{{ _('metafield_' + field) | capitalize }}: <select class="search_input" name="sent_meta_{{ field }}1" id="sent_meta_{{ field }}1">
+		<option value="">{{ _('any') }}</option>
+		<option value="zhs1930_f">zhs1930_f</option>
+		<option value="kmd1949_m">kmd1949_m</option>
+		<option value="oshu1948_m">oshu1948_m</option>
+		<option value="smo1961_f">smo1961_f</option>
+		<option value="zda1941_m">zda1941_m</option>
+		<option value="fma1957_f">fma1957_f</option>
+		<option value="fba1959_f">fba1959_f</option>
+		<option value="tab1932f">tab1932f</option>
+		</select><br>
+		{% endif %}
+	{% endfor %}
+{% endif %}
+{{ _('Analyses: ') }}<select name="n_ana1" id="n_ana1" class="search_input">
+{% if ambiguous_analyses %}
+<option value="ambiguous">{{ _('only ambiguous') }}</option>
+<option value="nonambiguous">{{ _('only non-ambiguous') }}</option>
+<option value="analyzed">{{ _('only with analysis') }}</option>
+{% else %}
+<option value="nonambiguous" selected>{{ _('only with analysis') }}</option>
+<option value="any" selected>{{ _('any number of analyses') }}</option>
+{% endif %}
+<option value="none">{{ _('only without analysis') }}</option>
+</select><br>
+{{ _('Position in sentence: ') }}<input type="number" name="sentence_index1" id="sentence_index1" value="" placeholder="1" class="search_input distance_input"><br>

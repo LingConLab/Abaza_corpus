@@ -1,0 +1,234 @@
+{
+  "corpus_name": "conlab_abaza",
+  "input_format": "json",
+  "debug": false,
+  "media": true,
+  "media_length": 60,
+  "max_context_expand": 6,
+  "max_distance_filter": 200000,
+  "max_docs_retrieve": 9999,
+  "integer_meta_fields": ["year_of_birth"],
+  "max_words_in_sentence": 40,
+  "query_timeout": 60,
+  "viewable_meta": [
+    "filename",
+    "title",
+    "year",
+    "speakers"
+  ],
+  "sentence_meta": [
+    "speaker",
+    "sex",
+    "year_of_birth"
+  ],
+  "search_meta": {
+    "columns": [
+      [
+        {"type": "input_text", "name": "title", "placeholder": "Title"},
+        {"type": "separator"},
+        {"type": "input_number", "name": "year_from", "placeholder": "Year: from"},
+        {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
+      ]
+    ],
+    "stat_options": [
+      "speakers",
+      "title"
+    ]
+  },
+  "word_fields":
+  [
+    "trans_ru"
+  ],
+  "languages": ["abaza", "russian"],
+  "interface_languages": {"ru": "Russian", "en": "English"},
+  "all_language_search_enabled": true,
+  "gloss_search_enabled": true,
+  "ambiguous_analyses": false,
+  "lang_props":
+  {
+    "russian":
+    {
+    },
+    "abaza":
+    {
+      "gloss_shortcuts": {
+        "case": "(unmarked|gen|abl|acc|dat|loc)(\\.(sg|pl))?",
+        "poss": "(p\\.[123](sg|pl)?)",
+        "finit": "(imp|imp.emph|hort|juss|cond|pst|plpf|pc.pst|ipfv|fut|pot|neg.pot|ptcp.fut|cv|cv.ant|cv.term|neg.cv.att|desid)"
+      },
+      "gr_fields_order": ["nType", "adjType", "proType", "stemType", "num_deriv", "v_form", "attributivizer", "tense", "person", "number", "case", "poss"],
+      "gloss_selection": {
+        "columns": [ 
+          [            
+            {"type": "gloss", "value": "1sg.abs", "tooltip": "First person singular absolutive"},
+            {"type": "gloss", "value": "1sg.io", "tooltip": "First person singular indirect object"},
+            {"type": "gloss", "value": "1sg.erg", "tooltip": "First person singular ergative"},
+            {"type": "gloss", "value": "2m.abs", "tooltip": "Second person singular masculine absolutive"},
+            {"type": "gloss", "value": "2m.io", "tooltip": "Second person singular masculine indirect object"},
+            {"type": "gloss", "value": "2m.erg", "tooltip": "Second person singular masculine ergative"},
+            {"type": "gloss", "value": "2f.abs", "tooltip": "Second person singular feminine absolutive"},
+            {"type": "gloss", "value": "2f.io", "tooltip": "Second person singular feminine indirect object"},
+            {"type": "gloss", "value": "2f.erg", "tooltip": "Second person singular feminine ergative"},
+            {"type": "gloss", "value": "3h.abs", "tooltip": "Third person singular human absolutive"},
+            {"type": "gloss", "value": "3n.abs", "tooltip": "Third person singular non-human absolutive"},
+            {"type": "gloss", "value": "3pl.abs", "tooltip": "Third person plural absolutive"},
+            {"type": "gloss", "value": "3m.io", "tooltip": "Third person singular masculine indirect object"},
+            {"type": "gloss", "value": "3m.erg", "tooltip": "Third person singular masculine ergative"}
+          ],
+          [
+            {"type": "gloss", "value": "1pl.abs", "tooltip": "First person plural absolutive"},
+            {"type": "gloss", "value": "1pl.io", "tooltip": "First person plural indirect object"},
+            {"type": "gloss", "value": "1pl.erg", "tooltip": "First person plural ergative"},
+            {"type": "gloss", "value": "2pl.abs", "tooltip": "Second person plural absolutive"},
+            {"type": "gloss", "value": "2pl.io", "tooltip": "Second person plural indirect object"},
+            {"type": "gloss", "value": "2pl.erg", "tooltip": "Second person plural ergative"},
+            {"type": "gloss", "value": "3f.io", "tooltip": "Third person singular feminine indirect object"},
+            {"type": "gloss", "value": "3f.erg", "tooltip": "Third person singular feminine ergative"},
+            {"type": "gloss", "value": "3n.io", "tooltip": "Third person singular non-human indirect object"},
+            {"type": "gloss", "value": "3n.erg", "tooltip": "Third person singular non-human ergative"},
+            {"type": "gloss", "value": "3pl.io", "tooltip": "Third person plural indirect object"},
+            {"type": "gloss", "value": "3pl.erg", "tooltip": "Third person plural ergative"}
+          ],
+          [
+            {"type": "gloss", "value": "rel.abs", "tooltip": "Relative absolutive"},
+            {"type": "gloss", "value": "rel.io", "tooltip": "Relative indirect object"},
+            {"type": "gloss", "value": "rel.erg", "tooltip": "Relative ergative"},
+            {"type": "gloss", "value": "dat", "tooltip": "dative applicative"},
+            {"type": "gloss", "value": "soc", "tooltip": "sociative applicative"},
+            {"type": "gloss", "value": "rec.io", "tooltip": "reciprocal indirect object"},
+            {"type": "gloss", "value": "rec.erg", "tooltip": "reciprocal ergative"},
+            {"type": "gloss", "value": "ben", "tooltip": "benefactive applicative"},
+            {"type": "gloss", "value": "ins", "tooltip": "instrumental applicative"},
+            {"type": "gloss", "value": "jud", "tooltip": "judicantis applicative"},
+            {"type": "gloss", "value": "caus", "tooltip": "causative"},
+            {"type": "gloss", "value": "rfl.abs", "tooltip": "absolutive reflexive"},
+            {"type": "gloss", "value": "com", "tooltip": "comitative applicative"},
+            {"type": "gloss", "value": "mal", "tooltip": "malefactive applicative"}
+          ],  
+          [
+            {"type": "gloss", "value": "recp.h", "tooltip": "human reciprocal pronoun"},
+            {"type": "gloss", "value": "recp.n", "tooltip": "non-human reciprocal pronoun"},
+            {"type": "gloss", "value": "def", "tooltip": "definite article"},
+            {"type": "gloss", "value": "indf", "tooltip": "indefinite article"},
+            {"type": "gloss", "value": "rep", "tooltip": "repetitive"},
+            {"type": "gloss", "value": "qadv", "tooltip": "adverbial interrogative"},
+            {"type": "gloss", "value": "csl", "tooltip": "cislocative preverb"},
+            {"type": "gloss", "value": "trl", "tooltip": "translocative preverb"},
+            {"type": "gloss", "value": "neg.emp", "tooltip": "emphatic negation"},
+            {"type": "gloss", "value": "neg", "tooltip": "negation"},
+            {"type": "gloss", "value": "lim", "tooltip": "limitive"},
+            {"type": "gloss", "value": "loc", "tooltip": "locative preverb"},
+            {"type": "gloss", "value": "loc.elat", "tooltip": "locative preverb in the elative form"},
+            {"type": "gloss", "value": "pot", "tooltip": "potential applicative"},
+            {"type": "gloss", "value": "invol", "tooltip": "involuntative applicative"}
+          ],
+          [
+            {"type": "gloss", "value": "rel.rsn", "tooltip": "reason relativization"},
+            {"type": "gloss", "value": "rel.tmp", "tooltip": "temporal relativization"},
+            {"type": "gloss", "value": "rel.mnr", "tooltip": "manner relativization"},
+            {"type": "gloss", "value": "rel.loc", "tooltip": "locative relativization"},
+            {"type": "gloss", "value": "imp", "tooltip": "imperative"},
+            {"type": "gloss", "value": "aor", "tooltip": "aorist"},
+            {"type": "gloss", "value": "res", "tooltip": "resultative"},
+            {"type": "gloss", "value": "cln", "tooltip": "non-human numeral classifier"},
+            {"type": "gloss", "value": "clh", "tooltip": "human numeral classifier"},
+            {"type": "gloss", "value": "just", "tooltip": "“just” converb"},
+            {"type": "gloss", "value": "nins", "tooltip": "instrument nominalization"},
+            {"type": "gloss", "value": "nml", "tooltip": "nominalization"},
+            {"type": "gloss", "value": "nag", "tooltip": "agent nominalization"},
+            {"type": "gloss", "value": "npot", "tooltip": "potential nominalization"},
+            {"type": "gloss", "value": "nloc", "tooltip": "locative nominalization"},
+            {"type": "gloss", "value": "nmnr", "tooltip": "manner nominalization"}
+          ],
+          [
+            {"type": "gloss", "value": "add", "tooltip": "additive"},
+            {"type": "gloss", "value": "coord", "tooltip": "coordination"},
+            {"type": "gloss", "value": "elat", "tooltip": "elative"},
+            {"type": "gloss", "value": "lat", "tooltip": "lative"},
+            {"type": "gloss", "value": "int", "tooltip": "intensive"},
+            {"type": "gloss", "value": "dprc", "tooltip": "depreciative"},
+            {"type": "gloss", "value": "immed", "tooltip": "immediative"},
+            {"type": "gloss", "value": "ass", "tooltip": "assertive"},
+            {"type": "gloss", "value": "infr", "tooltip": "inferential"},
+            {"type": "gloss", "value": "rstr", "tooltip": "restrictive"},
+            {"type": "gloss", "value": "freq", "tooltip": "frequentative"},
+            {"type": "gloss", "value": "qh", "tooltip": "human interrogative"},
+            {"type": "gloss", "value": "q", "tooltip": "yes/no interrogative"},
+            {"type": "gloss", "value": "car", "tooltip": "caritive"},
+            {"type": "gloss", "value": "pst.nfin", "tooltip": "non-finite past tense"}
+          ],
+          [
+            {"type": "gloss", "value": "cond.rsn", "tooltip": "reason conditional"},
+            {"type": "gloss", "value": "prm.st", "tooltip": "stative permissive"},
+            {"type": "gloss", "value": "prm.dyn", "tooltip": "dynamic permissive"},
+            {"type": "gloss", "value": "dyn", "tooltip": "dynamicization"},
+            {"type": "gloss", "value": "cnc", "tooltip": "concessive"},
+            {"type": "gloss", "value": "cond.real", "tooltip": "realis conditional"},
+            {"type": "gloss", "value": "prs", "tooltip": "present tense"},
+            {"type": "gloss", "value": "since", "tooltip": "“since” converb"},
+            {"type": "gloss", "value": "emp", "tooltip": "emphatic"},
+            {"type": "gloss", "value": "qn", "tooltip": "non-human interrogative"},
+            {"type": "gloss", "value": "pl", "tooltip": "plural"},
+            {"type": "gloss", "value": "aspl", "tooltip": "associative plural"},
+            {"type": "gloss", "value": "plh", "tooltip": "human plural"},
+            {"type": "gloss", "value": "unit", "tooltip": "unit (with numerals)"},
+            {"type": "gloss", "value": "cvb.neg", "tooltip": "negative converb"}
+          ],
+          [
+            {"type": "gloss", "value": "hab", "tooltip": "habitual"},
+            {"type": "gloss", "value": "cvb", "tooltip": "converb"},            
+            {"type": "gloss", "value": "pst", "tooltip": "past tense"},
+            {"type": "gloss", "value": "until", "tooltip": "“until” converb"},
+            {"type": "gloss", "value": "opt", "tooltip": "optative"},
+            {"type": "gloss", "value": "each", "tooltip": "“each time” converb"},
+            {"type": "gloss", "value": "npst.dcl", "tooltip": "non-past declarative"},
+            {"type": "gloss", "value": "fut.nfin", "tooltip": "non-finite future tense"},
+            {"type": "gloss", "value": "msd", "tooltip": "masdar"},
+            {"type": "gloss", "value": "cnt", "tooltip": "continuative"},
+            {"type": "gloss", "value": "cond", "tooltip": "conditional"},
+            {"type": "gloss", "value": "purp", "tooltip": "purposive converb"},
+            {"type": "gloss", "value": "nondum", "tooltip": "not-yet tense"},
+            {"type": "gloss", "value": "dcl", "tooltip": "declarative"}
+          ],
+          [
+            {"type": "gloss", "value": "adv", "tooltip": "adverbial"},
+            {"type": "gloss", "value": "prs.nfin", "tooltip": "non-finite present tense (with stative verbs)"},
+            {"type": "gloss", "value": "ipf", "tooltip": "imperfective"},
+            {"type": "gloss", "value": "dfcl", "tooltip": "difficilitive"},
+            {"type": "gloss", "value": "fcl", "tooltip": "facilitative"},
+            {"type": "gloss", "value": "re", "tooltip": "refactive"},
+            {"type": "gloss", "value": "inc", "tooltip": "inceptive"},
+            {"type": "gloss", "value": "iam", "tooltip": "iamitive"},
+            {"type": "gloss", "value": "exc", "tooltip": "excessive"},
+            {"type": "gloss", "value": "fut", "tooltip": "future tense"},
+            {"type": "gloss", "value": "circ", "tooltip": "circumferentive"},
+            {"type": "gloss", "value": "sml", "tooltip": "simulative"},
+            {"type": "gloss", "value": "cop", "tooltip": "copula"},
+            {"type": "gloss", "value": "npro", "tooltip": "nominal proform"}
+          ],
+          [
+            {"type": "gloss", "value": "prox.sg", "tooltip": "singular proximal demonstrative"},
+            {"type": "gloss", "value": "med.sg", "tooltip": "singular medial demonstrative"},
+            {"type": "gloss", "value": "dist.sg", "tooltip": "singular distal demonstrative"},
+            {"type": "gloss", "value": "prox.pl", "tooltip": "plural proximal demonstrative"},
+            {"type": "gloss", "value": "med.pl", "tooltip": "plural medial demonstrative"},
+            {"type": "gloss", "value": "dist.pl", "tooltip": "plural distal demonstrative"},
+            {"type": "gloss", "value": "prox.loc", "tooltip": "locative proximal demonstrative"},
+            {"type": "gloss", "value": "med.loc", "tooltip": "locative medial demonstrative"},
+            {"type": "gloss", "value": "dist.loc", "tooltip": "locative distal demonstrative"},
+            {"type": "gloss", "value": "prox.adv", "tooltip": "adverbial proximal demonstrative"},
+            {"type": "gloss", "value": "med.adv", "tooltip": "adverbial medial demonstrative"},
+            {"type": "gloss", "value": "dist.adv", "tooltip": "adverbial distal demonstrative"},
+            {"type": "gloss", "value": "quot", "tooltip": "quotative particle"},
+            {"type": "gloss", "value": "filler", "tooltip": "filler"},
+            {"type": "gloss", "value": "ptcl", "tooltip": "particle"}
+          ]
+        ]
+      },
+      "gramm_selection": {
+        "columns": [
+        ]
+      }
+    }
+  }
+}
