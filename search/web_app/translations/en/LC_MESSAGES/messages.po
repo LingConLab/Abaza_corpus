@@ -214,6 +214,36 @@ msgstr "strict"
 msgid "metafield_genre"
 msgstr "genre"
 
+msgid "metafield_recording_date"
+msgstr "date of recording"
+
+msgid "metafield_recording_place"
+msgstr "place of recording"
+
+msgid "annotators_linguists"
+msgstr "annotators-linguists"
+
+msgid "annotators_consultants"
+msgstr "annotators-consultants"
+
+msgid "metafield_duration"
+msgstr "duration"
+
+msgid "metafield_annotators_linguists"
+msgstr "annotators-linguists"
+
+msgid "metafield_annotators_consultants"
+msgstr "annotators-consultants"
+
+msgid "duration"
+msgstr "Duration"
+
+msgid "speakers"
+msgstr "Speakers"
+
+msgid "title"
+msgstr "Title"
+
 msgid "metafield_year"
 msgstr "year"
 
@@ -589,6 +619,9 @@ msgstr "Word (orth):"
 
 msgid "Word (trans):"
 msgstr "Word (trans):"
+
+msgid "Word (trans)"
+msgstr "Word (trans)"
 
 #: templates/index.html:53
 msgid "Lemma:"

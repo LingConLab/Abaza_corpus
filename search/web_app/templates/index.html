@@ -99,7 +99,7 @@ document.addEventListener('click', function(event) {
 <span id="show_help" class="glyphicon glyphicon-question-sign" aria-hidden="true"><span class="tooltip_prompt">{{ _('Show help') }}</span></span>
 </p>
 
-<div class="popover fade right in" role="tooltip" id="popover_lex" style="top: -49px; left: -28.625px; display: none;"><div class="arrow" style="top: 50%;"></div><h3 class="popover-title" style="display: none;"></h3><div class="popover-content">
+<!-- <div class="popover fade right in" role="tooltip" id="popover_lex" style="top: -49px; left: -28.625px; display: none;"><div class="arrow" style="top: 50%;"></div><h3 class="popover-title" style="display: none;"></h3><div class="popover-content">
                     <ul id="keyboard_lex" class="keyboard">
                     <li class="symbol"><span class="off">ə</span></li>
                     <li class="symbol"><span class="off">ä</span></li>
@@ -133,7 +133,7 @@ document.addEventListener('click', function(event) {
                     <li class="symbol"><span class="off">ʔ</span></li>
 					<li class="symbol"><span class="off">Ø</span></li>
                     </ul>
-                </div></div>
+                </div></div> -->
 
 
 <div id="search_div" class="transitions init-hidden">
@@ -205,7 +205,6 @@ document.addEventListener('click', function(event) {
 							{{ _('Sorting:') }} <select name="sort" id="sort" class="search_input">
 								<option value="random" selected>{{ _('random') }}</option>
 								<option value="wf">{{ _('by word (word queries)') }}</option>
-								<option value="lemma">{{ _('by lemma (word queries)') }}</option>
 								<option value="freq">{{ _('by frequency') }}</option>
 								{% if debug %}
 								<option value="">{{ _('no sorting') }}</option>
@@ -235,8 +234,8 @@ document.addEventListener('click', function(event) {
 						</div>
 						<div class="options_column_leftalign">
 						{{ _('Annotation layers in glossed mode:') }}<br>
-						<input type="checkbox" name="toggle_lemma" data="lex" class="toggle_glossed_layer" id="toggle_lemma" checked> {{ _('Lemma') }}<br>
-						<input type="checkbox" name="toggle_grammar" data="gramm" class="toggle_glossed_layer" id="toggle_grammar"> {{ _('Grammar') }}<br>
+						<input type="checkbox" name="toggle_lemma" data="lex" class="toggle_glossed_layer" id="toggle_lemma" checked> {{ _('Word (trans)') }}<br>
+						<!-- <input type="checkbox" name="toggle_grammar" data="gramm" class="toggle_glossed_layer" id="toggle_grammar"> {{ _('Grammar') }}<br> -->
 {% if gloss_search_enabled %}
 						<input type="checkbox" name="toggle_gloss" data="gloss" class="toggle_glossed_layer" id="toggle_gloss" checked> {{ _('Gloss') }}<br>
 {% endif %}

@@ -218,6 +218,36 @@ msgstr "точный"
 msgid "metafield_genre"
 msgstr "жанр"
 
+msgid "metafield_recording_date"
+msgstr "дата записи"
+
+msgid "metafield_recording_place"
+msgstr "место записи"
+
+msgid "annotators_linguists"
+msgstr "Лингвисты"
+
+msgid "annotators-consultants"
+msgstr "Консультанты"
+
+msgid "duration"
+msgstr "Длительность"
+
+msgid "metafield_duration"
+msgstr "длительность"
+
+msgid "metafield_annotators_linguists"
+msgstr "лингвисты"
+
+msgid "metafield_annotators_consultants"
+msgstr "консультанты"
+
+msgid "speakers"
+msgstr "Говорящие"
+
+msgid "title"
+msgstr "Название"
+
 msgid "metafield_year"
 msgstr "год"
 
@@ -548,6 +578,9 @@ msgstr "Слово (орф):"
 
 msgid "Word (trans):"
 msgstr "Слово (транс):"
+
+msgid "Word (trans)"
+msgstr "Слово (транс)"
 
 #: templates/index.html:53
 msgid "Lemma:"

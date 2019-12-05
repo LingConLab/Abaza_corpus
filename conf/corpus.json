@@ -13,8 +13,12 @@
   "viewable_meta": [
     "filename",
     "title",
-    "year",
-    "speakers"
+    "speakers",
+    "duration",
+    "recording_date",
+    "recording_place",
+    "annotators_linguists",
+    "annotators_consultants"
   ],
   "sentence_meta": [
     "speaker",
@@ -26,8 +30,7 @@
       [
         {"type": "input_text", "name": "title", "placeholder": "Title"},
         {"type": "separator"},
-        {"type": "input_number", "name": "year_from", "placeholder": "Year: from"},
-        {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
+        {"type": "input_text", "name": "recording_date", "placeholder": "Date of recording"}
       ]
     ],
     "stat_options": [
