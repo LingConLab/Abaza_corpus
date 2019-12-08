@@ -120,7 +120,7 @@ class MediaCutter:
         Cut media file into overlapping pieces whose length is specified
         in the settings. Write it to corpus/%corpus_name%/media.
         """
-        outDir = os.path.abspath(os.path.join(self.settings['corpus_dir'], 'media'))
+        outDir = os.path.abspath(os.path.join('../search/media/conlab_abaza'))
         if not os.path.exists(outDir):
             os.makedirs(outDir)
         fileLen = self.settings['media_length']
@@ -131,11 +131,11 @@ class MediaCutter:
 
 
 if __name__ == '__main__':
-    settings = {'corpus_dir': 'corpus/beserman_eaf', 'media_length': 60}
+    settings = {'corpus_dir': 'corpus/conlab_abaza/eaf', 'media_length': 60}
     mc = MediaCutter(settings)
-    for path, dirs, files in os.walk(settings['corpus_dir']):
+    for path, dirs, files in os.walk('../../abaza_files/sound'):
         for fname in files:
-            if fname.lower().endswith('.mts'):
+            if fname.lower().endswith('.wav'):
                 fname = os.path.abspath(os.path.join(path, fname))
                 print('Starting', fname)
                 mc.cut_media(fname)

@@ -14,9 +14,10 @@ import time
 from search_engine.client import SearchClient
 from .response_processors import SentenceViewer
 from .transliteration import *
-
+from flask_basicauth import BasicAuth
 
 SETTINGS_DIR = '../conf'
+
 MAX_PAGE_SIZE = 100     # maximum number of sentences per page
 f = open(os.path.join(SETTINGS_DIR, 'corpus.json'), 'r', encoding='utf-8')
 settings = json.loads(f.read())
@@ -101,6 +102,9 @@ def nocache(view):
 
 app = Flask(__name__)
 app.secret_key = 'kkj6hd)^js7#dFQ'
+app.config['BASIC_AUTH_USERNAME'] = 'john'
+app.config['BASIC_AUTH_PASSWORD'] = 'matrix'
+basic_auth = BasicAuth(app)
 sessionData = {}    # session key -> dictionary with the data for current session
 app.config.update(dict(
     LANGUAGES=settings['interface_languages'],
@@ -382,6 +386,7 @@ def start_page():
 
 
 @app.route('/search')
+@basic_auth.required
 def search_page():
     """
     Return HTML of the search page (the main page of the corpus).

@@ -624,11 +624,9 @@ msgid "Word (trans)"
 msgstr "Word (trans)"
 
 #: templates/index.html:53
-msgid "Lemma:"
-msgstr "Lemma:"
 
-msgid "Lemma"
-msgstr "Lemma"
+msgid "lemma"
+msgstr "word (trans)"
 
 #: templates/index.html:54
 msgid "Grammar:"
@@ -827,7 +825,7 @@ msgid "word_th_word"
 msgstr "word"
 
 msgid "word_th_lemma"
-msgstr "lemma"
+msgstr "word (trans)"
 
 msgid "word_th_transcription"
 msgstr "transcription"

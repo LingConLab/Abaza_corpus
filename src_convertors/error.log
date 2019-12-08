@@ -22,8 +22,8 @@ Wrong gloss or partitioning: акастрЮль != def-кастрюля
 Wrong gloss or partitioning: цӏолАта != глубокий-adv
 Wrong gloss or partitioning: тачвАта != налить(imp?)-adv
 Wrong gloss or partitioning: йтаргЫлта != 3n.abs-ставить(imp?)-adv
-Wrong gloss or partitioning: тшАкӏвнахуа != rfl-?-ipf
-Wrong gloss or partitioning: тшАкӏвнахуамца != rfl-?-ipf-cvb
+Wrong gloss or partitioning: тшАкӏвнахуа != rfl.abs-?-ipf
+Wrong gloss or partitioning: тшАкӏвнахуамца != rfl.abs-?-ipf-cvb
 Wrong gloss or partitioning: йдУта != 3n.abs-большой-adv
 Wrong gloss or partitioning: йбАбадза != ?-пышный-ass
 Wrong gloss or partitioning: йцИтӏ != 3n.abs-идти-prs-dcl
@@ -101,7 +101,7 @@ Processing corpus/conlab_abaza/eaf/O_rabote_OzovaSM_09072017.eaf...
 Wrong gloss or partitioning: Апхьарта != [3n.io?]школа
 Wrong gloss or partitioning: директоршкóл-ква != директор=школа-pl
 Wrong gloss or partitioning: хвАбыж-та != сильно
-Wrong gloss or partitioning: йгьи != 2m.abs-есть-npst
+Wrong gloss or partitioning: йгьи != 2m.abs-есть-npst.dcl
 Wrong gloss or partitioning: у-ча-пӏ != add
 Wrong gloss or partitioning: сугӏ-и != 1sg.io-люди-add
 Processing corpus/conlab_abaza/eaf/2018.07.16_BidzhevaTA_1932_pro_aul_pro_nravy.eaf...
@@ -151,9 +151,10 @@ Wrong gloss or partitioning: сАгӏвнагатӏ != 1sg.abs-3n.io-loc-прй�
 Wrong gloss or partitioning: съагӏашӏАсра != 1sg.abs-rel.loc-csl-бить-msd
 Wrong gloss or partitioning: атахъхАз != 3n.io-надо-inc-pst.nfin
 Wrong gloss or partitioning: йсымдЫруата != 3n.abs-1sg.erg-neg-знать-ipf-adv
+Wrong gloss or partitioning: йы-р-зЫ-р-ш-и-тӏ != 3n.abs-3pl.io-ben-3pl.erg-делить-dcl
 Processing corpus/conlab_abaza/eaf/O_kolxoze2_SanashokovaCKh_13072017.eaf...
 Processing corpus/conlab_abaza/eaf/2018.07.16_BidzhevaTA_1932_igry_bakhsyme.eaf...
-Wrong gloss or partitioning: й-кӏна-хӏА-н != 3n.abs-висеть-pst.dcl
+Wrong gloss or partitioning: й-кӏна-хӏА-н != 3n.abs-висеть-dcl
 Wrong gloss or partitioning: датша-гьИ != другой
 Wrong gloss or partitioning: абахсЫма != def-бахсымэ
 Wrong gloss or partitioning: апнЫ != 3sg.io-в
@@ -172,6 +173,7 @@ Wrong gloss or partitioning: у-жвы-гьи != сейчас.add
 Processing corpus/conlab_abaza/eaf/O_muzhe_SanashokovaCKh_13072017.eaf...
 Processing corpus/conlab_abaza/eaf/O_sebe_SanashokovaCKh_13072017.eaf...
 Wrong gloss or partitioning: с-а-з-рЫ-пхь-у-шы-з != 1sg.abs-rel.erg-caus-читать-ipf-fut-pst.nfin
+Wrong gloss or partitioning: ды-гь-сЫ-ма-хы-мы-з-тӏ != 3h.abs-neg-1sg.io-имется-re-neg-dcl
 Wrong gloss or partitioning: Архъа != def-поле
 Wrong gloss or partitioning: ауасАмцара != таким=образом
 Processing corpus/conlab_abaza/eaf/Letom_UshaOSh_13072017.eaf...
