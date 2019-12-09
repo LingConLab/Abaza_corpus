@@ -102,8 +102,9 @@ def nocache(view):
 
 app = Flask(__name__)
 app.secret_key = 'kkj6hd)^js7#dFQ'
-app.config['BASIC_AUTH_USERNAME'] = 'john'
-app.config['BASIC_AUTH_PASSWORD'] = 'matrix'
+app.config['BASIC_AUTH_USERNAME'] = 'tabulova'
+app.config['BASIC_AUTH_PASSWORD'] = open('.htpasswd', 'r').read().strip()
+
 basic_auth = BasicAuth(app)
 sessionData = {}    # session key -> dictionary with the data for current session
 app.config.update(dict(
@@ -380,9 +381,9 @@ def update_expanded_contexts(context, neighboringIDs):
                 curSent['languages'][lang][side + '_id'] = neighboringIDs[lang][side]
 
 
-@app.route('/')
-def start_page():
-    return render_template('start_page.html')   
+# @app.route('/')
+# def start_page():
+#     return render_template('start_page.html')   
 
 
 @app.route('/search')
