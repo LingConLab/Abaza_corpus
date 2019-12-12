@@ -6,6 +6,7 @@ import itertools
 from lxml import etree
 from txt2json import Txt2JSON
 from media_operations import MediaCutter
+import unidecode
 
 
 EAF_TIME_MULTIPLIER = 1000  # time stamps are in milliseconds
@@ -209,7 +210,8 @@ class Eaf2JSON(Txt2JSON):
                 contents = self.segmentTree[childID][0]
                 for ana in self.retrieve_analyses(childID, lang=lang, topLevel=False):
                     if tierType == 'lemma':
-                        ana['lex'] = contents
+                        ana['lex'] = unidecode.unidecode(contents)
+                        ana['lex_acute'] = contents
                     elif tierType == 'parts':
                         ana['parts'] = contents
                     elif tierType == 'gloss':

@@ -165,7 +165,7 @@ class SentenceViewer:
         """
         ana4template = {'lex': '', 'pos': '', 'grdic': '', 'lex_fields': [], 'gr': '', 'other_fields': []}
         if 'lex' in ana:
-            ana4template['lex'] = self.transliterate_baseline(ana['lex'], lang=lang, translit=translit)
+            ana4template['lex'] = self.transliterate_baseline(ana['lex_acute'], lang=lang, translit=translit)
         if 'gr.pos' in ana:
             ana4template['pos'] = ana['gr.pos']
         grValues = []     # inflectional categories
@@ -807,7 +807,7 @@ class SentenceViewer:
                 parts += ' || '.join(ana['parts'] for ana in analyses if 'parts' in ana)
                 gloss += ' || '.join(ana['gloss'] for ana in analyses if 'gloss' in ana)
                 gramm += ' || '.join(get_ana_gramm(ana) for ana in analyses)
-                lemmata += ' || '.join(ana['lex'] for ana in analyses if 'lex' in ana)
+                lemmata += ' || '.join(ana['lex_acute'] for ana in analyses if 'lex_acute' in ana)
         if self.rxTabs.search(parts) is not None:
             parts = ''
         if self.rxTabs.search(gloss) is not None:
@@ -994,21 +994,21 @@ class SentenceViewer:
         if 'keep_lemma_order' not in self.settings or not self.settings['keep_lemma_order']:
             curLemmata = set()
             for ana in word['ana']:
-                if 'lex' in ana:
-                    if type(ana['lex']) == list:
-                        for l in ana['lex']:
+                if 'lex_acute' in ana:
+                    if type(ana['lex_acute']) == list:
+                        for l in ana['lex_acute']:
                             curLemmata.add(l.lower())
                     else:
-                        curLemmata.add(ana['lex'].lower())
+                        curLemmata.add(ana['lex_acute'].lower())
             return '/'.join(l for l in sorted(curLemmata))
         curLemmata = []
         for ana in word['ana']:
-            if 'lex' in ana:
-                if type(ana['lex']) == list:
-                    for l in ana['lex']:
+            if 'lex_acute' in ana:
+                if type(ana['lex_acute']) == list:
+                    for l in ana['lex_acute']:
                         curLemmata.append(l.lower())
                 else:
-                    curLemmata.append(ana['lex'].lower())
+                    curLemmata.append(ana['lex_acute'].lower())
         return '/'.join(curLemmata)
 
     def get_word_table_fields(self, word):

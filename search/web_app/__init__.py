@@ -15,6 +15,7 @@ from search_engine.client import SearchClient
 from .response_processors import SentenceViewer
 from .transliteration import *
 from flask_basicauth import BasicAuth
+import unidecode
 
 SETTINGS_DIR = '../conf'
 
@@ -954,6 +955,8 @@ def copy_request_args():
     for field, value in request.args.items():
         if type(value) != list or len(value) > 1:
             query[field] = copy.deepcopy(value)
+            if 'lex' in field:
+                query[field] = unidecode.unidecode(value)
             if type(value) == str:
                 mFieldNum = sc.qp.rxFieldNum.search(field)
                 if mFieldNum is None:
@@ -962,6 +965,8 @@ def copy_request_args():
                     continue
                 lang = request.args['lang' + mFieldNum.group(2)]
                 query[field] = input_translit_func(mFieldNum.group(1), query[field], lang)
+                if 'lex' in field:
+                    query[field] = unidecode.unidecode(value)
         else:
             query[field] = copy.deepcopy(value[0])
     if 'sent_ids' in query:
@@ -1009,7 +1014,7 @@ def find_sentences_json(page=0):
     """
     Find sentences and change current options using the query in request.args.
     """
-    #print(request.args)
+
     if request.args and page <= 0:
         query = copy_request_args()
         page = 1
