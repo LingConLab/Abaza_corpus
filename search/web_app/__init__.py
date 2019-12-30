@@ -382,9 +382,9 @@ def update_expanded_contexts(context, neighboringIDs):
                 curSent['languages'][lang][side + '_id'] = neighboringIDs[lang][side]
 
 
-# @app.route('/')
-# def start_page():
-#     return render_template('start_page.html')   
+@app.route('/')
+def start_page():
+    return render_template('start_page.html')   
 
 
 @app.route('/search')

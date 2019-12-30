@@ -1446,10 +1446,46 @@ msgid "Как процитировать корпус"
 msgstr "How to cite the corpus"
 
 msgid "Если Вы используете данные Корпуса в своём исследовании, воспользуйтесь следующей ссылкой:"
-msgstr "If you use data from the Spoken corpus of Bashkir (Rakhmetovo and Baimovo) in your research, please cite as follows:"
+msgstr "If you use data from the Spoken corpus of Abaza in your research, please cite as follows:"
 
 msgid "Мария Овсянникова, Сергей Сай, Екатерина Аплонова, Анна Сметина, Елена Сокур. Устный корпус башкирского языка дер. Рахметова и с. Баимово. СПб.: ИЛИ РАН; М.: Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/oral_bashkir_corpus/, дата обращения"
 msgstr "Maria Ovsjannikova, Sergey Say, Ekaterina Aplonova, Anna Smetina, Elena Sokur. Spoken corpus of Bashkir (Rakhmetovo and Baimovo). St. Petersburg: Institute for linguistic studies; Moscow: Linguistic Convergence Laboratory, NRU HSE. (Available online at https://linghub.ru/oral_bashkir_corpus/, accessed on"
 
 msgid "и"
 msgstr "and"
+
+msgid "Корпус содержит устные тексты на тапантском диалекте абазинского языка. Записи были сделаны в ходе экспедиций НИУ ВШЭ и РГГУ в аул Инжич-Чукун Абазинского района республики Карачаево-Черкесия в 2017–2019 гг. Расшифровка и глоссирование текстов были выполнены участниками научно-учебной группы"
+msgstr ""
+
+msgid "“Аспекты грамматики абазинского языка”"
+msgstr ""
+
+msgid "и гранта РНФ 17-18-01184 "Коммуникативная организация естественного дискурса на звучащих и жестовых языках". С декабря 2019 г. поиск в корпусе работает в закрытом тестовом режиме."
+msgstr ""
+
+msgid "Этот корпус относится к группе корпусов, использующих поисковую платформу"
+msgstr ""
+
+msgid "Инструкция с описанием общих технических возможностей поиска в корпусах этого типа содержится в разделе «Справка» (кнопка с вопросительным знаком в правом верхнем углу страницы поиска). Ниже описаны некоторые правила, специфические для данного корпуса."
+msgstr ""
+
+msgid "П. М. Аркадьев, Ю. А. Ландер, А. Б. Панова, А. Д. Сорокина, Е. О. Сокур. Устный корпус абазинского языка. М.: Школа лингвистики, НИУ ВШЭ; Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/spoken_abaza/, дата обращения"
+msgstr ""
+
+msgid "Транскрипция"
+msgstr "Transcription"
+
+msgid "Устный корпус"
+msgstr "Spoken corpus"
+
+msgid "абазинского языка"
+msgstr "of Abaza"
+
+msgid "Анастасия Борисовна Панова"
+msgstr "Anastasia Panova"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
