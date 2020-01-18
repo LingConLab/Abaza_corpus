@@ -1529,8 +1529,8 @@ msgstr "4. Some grammatical roots"
 msgid "Состав корпуса"
 msgstr "Corpus Composition"
 
-msgid "На данный момент корпус содержит 25 текстов общей длительностью 53 минуты. Объем корпуса 8 668 токенов. "
-msgstr "Currently the corpus consists of 25 texts with total run time of 53 minutes. The corpus contains 8,668 tokens."
+msgid "На данный момент корпус содержит 25 текстов общей длительностью 53 минуты. Объем корпуса 3 636 токенов. "
+msgstr "Currently the corpus consists of 25 texts with total run time of 53 minutes. The corpus contains 3,636 tokens."
 
 msgid "Тексты корпуса были записаны от 8 носителей, от 1930 до 1961 г.р. Все тексты представляют собой спонтанные рассказы носителей об их жизни и традициях аула, сказки и легенды. Подробная информация о каждом тексте доступна в таблице, появляющейся при выборе подкорпуса."
 msgstr "The texts were recorded from 8 speakers born between 1930 and 1961. All the texts are spontaneous stories about the speakers’ lives, village traditions, tales and legends. More detailed information about each text can be found in the table which appears when choosing the subcorpus."
