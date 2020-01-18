@@ -1454,23 +1454,137 @@ msgstr "Maria Ovsjannikova, Sergey Say, Ekaterina Aplonova, Anna Smetina, Elena 
 msgid "и"
 msgstr "and"
 
+msgid "Устный корпус абазинского языка"
+msgstr "Spoken Corpus of Abaza"
+
+msgid "Главная"
+msgstr "Home"
+
+msgid "Транскрипция"
+msgstr "Transcription"
+
+msgid "Абазинские тексты приводятся в абазинской кириллической орфографии и в латинской транскрипции, выработанной московской научно-исследовательской группой по изучению абхазо-адыгских языков. Различия между МФА и системой транскрипции, используемой в корпусе, следующие:"
+msgstr "Abaza texts are presented in both the Abaza Cyrillic orthography and the Latin transcription developed by the Moscow research group for the study of Northwest Caucasian languages. The differences between the IPA and the system of transcription used in the corpus are as follows:"
+
+msgid "абруптивные согласные обозначены точкой над или под буквой (например, ṗ, ṭ, ḳ),"
+msgstr "ejective consonants are marked by a dot above or below the symbol (for example, ṗ, tт, kт),"
+
+msgid "палатализованные согласные обозначены апострофом (например, g’, ʁ’, χ’),"
+msgstr "palatalized consonants are marked with an apostrophe (for example, g’, ʁ’, χ’),"
+
+msgid "согласные c, č, š, ʒ, ǯ, ž, λ соответствуют t͡s, t͡ʃ, ʃ, dʒ, d͡ʒ, ʒ, ɬ в МФА,"
+msgstr "consonants c, č, š, ʒ, ǯ, ž, λ correspond to t͡s, t͡ʃ, ʃ, dʒ, d͡ʒ, ʒ, ɬ in the IPA,"
+
+msgid "согласные ŝ, ẑ, ĉ (свистяще-шипящие) отсутствуют в МФА."
+msgstr "consonants ŝ, ẑ, ĉ (hissing-hushing sounds) are absent from the IPA."
+
+msgid "Ударение в орфографической записи обозначено прописной буквой, ударение в транскрипции обозначено знаком акута."
+msgstr "In the Cyrillic orthography stress is indicated by a capital letter, and in the transcription by an acute accent mark."
+
+msgid "Как пользоваться корпусом"
+msgstr "How to use the corpus"
+
+msgid "Этот корпус относится к группе корпусов, использующих поисковую платформу tsakorpus. Инструкция с описанием общих технических возможностей поиска в корпусах этого типа содержится в разделе «Справка» (кнопка с вопросительным знаком в правом верхнем углу страницы поиска). Ниже описаны некоторые правила, специфические для данного корпуса."
+msgstr "This corpus is one of a group that uses the search platform “tsakorpus”.  Instructions with a description of the general technical capabilities of the search function in a corpus of this type can be found in the “Information” section (link with a question mark in the upper right corner of the search page).  Below are a few rules specific to this corpus"
+
+msgid "Поиск слова в орфографии"
+msgstr "Word search with Abaza Cyrillic orthography"
+
+msgid "В поле “слово (орф)” можно ввести словоформы, используя орфографическую запись. Например, по запросу апхьарта ‘школа’ можно найти все вхождения этой словоформы в текстах корпуса. Для абруптивных согласных в орфографической записи используется знак I (заглавное латинское i), например, пI, тI, кI."
+msgstr "Words and wordforms in the Cyrillic orthography are entered in the field “word (orth).”  For example, a search for the word апхьарта ‘school’ will result in all instances of this wordform in the corpus.  Capital Latin I is used in the orthography to indicate ejective consonants, for example, пI, тI, кI."
+
+msgid "Слова можно искать, используя регулярные выражения (подробнее см. в “Справке”). Например, знак ? обозначает “любой символ”, знак * обозначает “любое количество любых символов”. Так, по запросу ла в текущей версии корпуса можно найти одно вхождение слова ла ‘собака’; по запросу ла? найдется слово лан ‘ее мать’; по запросу ла* найдутся слова ла ‘собака’, лан ‘ее мать’, лара ‘она’, лаща ‘ее брат’ и др. Регистр не влияет на результаты поиска. "
+msgstr "Words can be searched for using regular expressions (for more detail see “Information”).  For example, the mark ? means “any symbol,” and the mark * signifies “any amount of symbols.”  Thus, a search for ла in the current version of the corpus will yield ла ‘dog’; a search for ла? will yield лан ‘ее мать’; and a search for ла* will turn up ла ‘dog’, лан ‘her mother’, лара ‘she’, лаща ‘her brother’ and more. Register does not affect the search results."
+
+msgid "Это же поле используется для поиска по русскому переводу. Перед тем, как ввести слово по-русски, не забудьте поменять абазинский на русский в поле “Язык/слой”."
+msgstr "This field is also used for searches by Russian translation.  Before entering a Russian word, switch the “Language/Layer” field from “Abaza” to “Russian”."
+
+msgid "Поиск слова в транскрипции"
+msgstr "Word search with Latin transcription"
+
+msgid "В поле “слово (транс)” можно ввести словоформы, используя запись в транскрипции. Например, по запросу ápχ’arta ‘школа’ можно найти все вхождения этой словоформы в текстах корпуса. Наличие/отсутствие знака ударения над гласными не влияет на результаты поиска. Запросы с использованием регулярных выражений работают так же, как в поле “слово (орф)”."
+msgstr "In the field “word (trans)” it is possible to search by wordform using the Latin transcription.  For example, a search of the word aмpχ’arta ‘school’ will turn up all entries of this word in the corpus.  The presence or absence of the stress mark does not affect the search results.  Searches using regular expressions works the same as in the field “word (orth).”"
+
+msgid "Поиск по глоссам"
+msgstr "Search with glosses"
+
+msgid "Поиск по глоссам позволяет создавать запросы, касающиеся морфемной структуры словоформ. Для того, чтобы воспользоваться поиском по глоссам, нужно ввести необходимые грамматические пометы в поле “глоссы” вручную (через запятую, если порядок глосс неважен) или же нажать на кнопку в правой части этого поля — появится окно-подсказка, в котором можно выбрать необходимые глоссы, а также задать их порядок относительно основы и относительно друг друга."
+msgstr "Searching by gloss makes it possible to get results which reveal a wordform’s morpheme structure.  To search by gloss, enter the desired grammatical markers into the field “glosses” by hand (if the order of glosses is unimportant, separate them with commas) or click on the button in the right of the field to access a window containing a list of glosses to choose from as well as information regarding their location relative to the root and to one another."
+
+msgid "Система глосс, используемая в корпусе, представлена в следующих таблицах."
+msgstr "The system of glosses used in the corpus is presented in the following tables."
+
+msgid "1. Личные префиксы"
+msgstr "1. Personal Prefixes"
+
+msgid "2. Прочие префиксы"
+msgstr "2. Other prefixes"
+
+msgid "3. Суффиксы"
+msgstr "3. Suffixes"
+
+msgid "4. Некоторые грамматические корни"
+msgstr "4. Some grammatical roots"
+
+msgid "Состав корпуса"
+msgstr "Corpus Composition"
+
+msgid "На данный момент корпус содержит 25 текстов общей длительностью 53 минуты. Объем корпуса 8 668 токенов. "
+msgstr "Currently the corpus consists of 25 texts with total run time of 53 minutes. The corpus contains 8,668 tokens."
+
+msgid "Тексты корпуса были записаны от 8 носителей, от 1930 до 1961 г.р. Все тексты представляют собой спонтанные рассказы носителей об их жизни и традициях аула, сказки и легенды. Подробная информация о каждом тексте доступна в таблице, появляющейся при выборе подкорпуса."
+msgstr "The texts were recorded from 8 speakers born between 1930 and 1961. All the texts are spontaneous stories about the speakers’ lives, village traditions, tales and legends. More detailed information about each text can be found in the table which appears when choosing the subcorpus."
+
+msgid "Создатели"
+msgstr "Creators"
+
+msgid "Тексты корпуса подготовлены по итогам проведения исследования (проект № 18-05-0014) в рамках Программы «Научный фонд Национального исследовательского университета «Высшая школа экономики» (НИУ ВШЭ)» в 2019 г. и в рамках государственной поддержки ведущих университетов Российской Федерации «5-100»."
+msgstr "Corpus texts were prepared as a product of the research project (No. 18-05-0014) realized through ‘The National Research University – Higher School of Economics’ Academic Fund Program in 2019 and funded by the Russian Academic Excellence Project '5-100'."
+
+msgid "Помощь в расшифровке текстов оказали носители абазинского языка Т. М. Абазова,  О. Р. Аджиева, Ф. Б. Айсанова, Ф. М. Асанаева, А. А. Биджев, С. З. Джандубаева, К. М. Джужуев, Ф. М. Копсергенова, С. М. Озова, Д. О. Уша, О. Ш. Уша, Т. О. Уша, З. М. Чукова, О. М. Чукова и А. Ш. Цеков."
+msgstr "Help in analyzing the texts was provided by Abaza language speakers T. M. Abazova, O. R. Adzhieva, F. B. Aysanova, F. M. Asanayeva, A. A. Bidzhev, S. Z. Dzhandubayeva, K. M. Dzhuzhuyev, F. M. Kopsergenova, S. M. Ozova.  D. O. Usha, O. Sh. Usha, T. O. Usha, Z. M. Chukova, O. M. Chukova, and A. Sh. Tsekov."
+
+msgid "В расшифровке и глоссировании текстов принимали участие студенты и преподаватели НИУ ВШЭ и РГГУ Д. А. Аракелова, П. М. Аркадьев, С. П. Дурнева, Е. С. Клягина, А. Г. Кошевой, Ю. А. Ландер, А. Б. Панова, К. И. Романова, А. А. Россиус, А. Д. Сорокина, Я. Г. Тестелец и А. И. Федоренко."
+msgstr "Students and faculty of HSE University and RSUH D. A. Arakelova, P. M. Arkadiev, S. P. Durneva, E. S. Klyagina, A. G. Koshevoy, Yu. A. Lander, A. B. Panova, K. I. Romanova, A. A. Rossius, A. D. Sorokina, Ya. G. Testelets, and A. I. Fedorenko."
+
+msgid "Тексты подготовлены к публикации в виде корпуса А. Б. Пановой и А. Д. Сорокиной. Дальнейшая техническая работа над корпусом выполнена Е. О. Сокур."
+msgstr "The texts were prepared for publication in the form of the corpus by A. B. Panova and A. D. Sorokina. Further technical work was done by E. O. Sokur."
+
+msgid "Проект Устного корпуса абазинского языка поддерживается Международной лабораторией языковой конвергенции Высшей Школы Экономики. Корпус создан в рамках Программы фундаментальных исследований Национального исследовательского университета «Высшая школа экономики» (НИУ ВШЭ) и с использованием средств субсидии в рамках государственной поддержки ведущих университетов Российской Федерации «5-100»."
+msgstr "The Spoken corpus of Abaza project is supported by the Linguistic Convergence Laboratory at the Higher School of Economics. The corpus was created within the framework of the HSE University Basic Research Program and funded by the Russian Academic Excellence Project '5-100'."
+
+msgid "Контакты"
+msgstr "Contacts"
+
+msgid "По содержательным вопросам:"
+msgstr "Questions concerning content:"
+
+msgid "По техническим вопросам:"
+msgstr "Technical queries:"
+
+msgid "Как процитировать корпус"
+msgstr "How to cite the corpus"
+
+msgid "Если Вы используете данные корпуса в своём исследовании, воспользуйтесь следующей ссылкой:"
+msgstr "If you use corpus data in your work, please use the following citation:"
+
 msgid "Корпус содержит устные тексты на тапантском диалекте абазинского языка. Записи были сделаны в ходе экспедиций НИУ ВШЭ и РГГУ в аул Инжич-Чукун Абазинского района республики Карачаево-Черкесия в 2017–2019 гг. Расшифровка и глоссирование текстов были выполнены участниками научно-учебной группы"
-msgstr ""
+msgstr "The corpus contains oral texts of the Tapanta dialect of the Abaza language.  Recording were made during a joint HSE University / RSUH expeditions to the village of Inzhich-Chukun in the Abazinsky district of the Karachay-Cherkess Republic in 2017-2019.  Text analysis and glossing was done by the participants in the research and study group"
 
 msgid "“Аспекты грамматики абазинского языка”"
-msgstr ""
+msgstr "“Aspects of Abaza Grammar”"
 
 msgid "и гранта РНФ 17-18-01184 "Коммуникативная организация естественного дискурса на звучащих и жестовых языках". С декабря 2019 г. поиск в корпусе работает в закрытом тестовом режиме."
-msgstr ""
+msgstr "and the RSF grant # 17-18-01184 “Communicative organization of natural discourse in spoken and signed languages.”  The search function entered a closed testing regime in December 2019."
 
 msgid "Этот корпус относится к группе корпусов, использующих поисковую платформу"
-msgstr ""
+msgstr "This corpus is one of a group that uses the search platform"
 
 msgid "Инструкция с описанием общих технических возможностей поиска в корпусах этого типа содержится в разделе «Справка» (кнопка с вопросительным знаком в правом верхнем углу страницы поиска). Ниже описаны некоторые правила, специфические для данного корпуса."
-msgstr ""
+msgstr "Instructions with a description of the general technical capabilities of the search function in a corpus of this type can be found in the “Information” section (link with a question mark in the upper right corner of the search page).  Below are a few rules specific to this corpus."
 
-msgid "П. М. Аркадьев, Ю. А. Ландер, А. Б. Панова, А. Д. Сорокина, Е. О. Сокур. Устный корпус абазинского языка. М.: Школа лингвистики, НИУ ВШЭ; Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/spoken_abaza/, дата обращения"
-msgstr ""
+msgid "А. Б. Панова, А. Д. Сорокина, П. М. Аркадьев, Е. О. Сокур. Устный корпус абазинского языка. М.: Школа лингвистики, НИУ ВШЭ; Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/spoken_abaza/, дата обращения"
+msgstr "Anastasia Panova, Anna Sorokina, Peter Arkadiev, Elena Sokur.  Spoken corpus of Abaza. M.: School of Linguistics, HSE University; Linguistic Convergence Laboratory, HSE University. (Available online at: https://linghub.ru/spoken_abaza/, accessed on"
 
 msgid "Транскрипция"
 msgstr "Transcription"
@@ -1484,8 +1598,335 @@ msgstr "of Abaza"
 msgid "Анастасия Борисовна Панова"
 msgstr "Anastasia Panova"
 
-msgid ""
-msgstr ""
+msgid "орфография"
+msgstr "orthography"
 
-msgid ""
-msgstr ""
+msgid "транскрипция"
+msgstr "transcription"
+
+msgid "глосса"
+msgstr "gloss"
+
+msgid "название"
+msgstr "name"
+
+msgid "датив"
+msgstr "dative"
+
+msgid "определённость"
+msgstr "definiteness"
+
+msgid "социатив"
+msgstr "sociative"
+
+msgid "реципрок"
+msgstr "reciprocal"
+
+msgid "темпоральная релятивизация"
+msgstr "temporal relativizer"
+
+msgid "репетитив"
+msgstr "repetitive"
+
+msgid "адвербиальный интеррогатив"
+msgstr "adverbial interrogative"
+
+msgid "цислокатив (директивный преверб «сюда»)"
+msgstr "cislocative (directional preverb ‘hither’)"
+
+msgid "эмфатическое отрицание"
+msgstr "emphatic negation"
+
+msgid "лимитив"
+msgstr "limitive"
+
+msgid "бенефактив"
+msgstr "benefactive"
+
+msgid "потенциалис"
+msgstr "potential"
+
+msgid "релятивизация причины"
+msgstr "reason relativizer"
+
+msgid "инструменталис"
+msgstr "instrumental"
+
+msgid "отрицание"
+msgstr "negation"
+
+msgid "«юдикатив»"
+msgstr "‘judicative’ (“from X-s point of view”)"
+
+msgid "инволюнтатив (“случайно”)"
+msgstr "involuntative (‘accidentally’)"
+
+msgid "транслокатив (директивный преверб «отсюда»)"
+msgstr "translocative (directional preverb ‘thither’)"
+
+msgid "элативная форма преверба"
+msgstr "elative form of the preverb"
+
+msgid "каузатив"
+msgstr "causative"
+
+msgid "рефлексив"
+msgstr "reflexive"
+
+msgid "комитатив"
+msgstr "comitative"
+
+msgid "малефактив"
+msgstr "malefactive"
+
+msgid "релятивизация способа"
+msgstr "manner relativizer"
+
+msgid "локативная релятивизация"
+msgstr "locative relativizer"
+
+msgid "прочие превербы"
+msgstr "other preverbs"
+
+msgid "императив (нет своего показателя, указывается в скобках после основы)"
+msgstr "imperative (no marker, is indicated in parentheses after the root)"
+
+msgid "аорист (нет своего показателя, указывается в скобках после основы)"
+msgstr "aorist (no marker, is indicated in parentheses after the root)"
+
+msgid "результатив (нет своего показателя, указывается в скобках после основы)"
+msgstr "resultative (no marker, is indicated in parentheses after the root)"
+
+msgid "классификатор вещей (при числительных)"
+msgstr "classifier of non-humans (with numerals)"
+
+msgid "конверб (“как только”)"
+msgstr "converb (‘just as’)"
+
+msgid "имя инструмента"
+msgstr "instrument nominal"
+
+msgid "депрециатив (сожаление)"
+msgstr "depreciative (regret)"
+
+msgid "аддитив"
+msgstr "additive"
+
+msgid "интенсив"
+msgstr "intensive"
+
+msgid "элатив"
+msgstr "elative"
+
+msgid "номинализация"
+msgstr "nominalizer"
+
+msgid "классификтор людей (при числительных)"
+msgstr "classifier of humans (with numerals)"
+
+msgid "имя деятеля"
+msgstr "agent nominal"
+
+msgid "интенсив"
+msgstr "intensive"
+
+msgid "иммедиатив, рестриктив (‘только (что)’)"
+msgstr "immediative, restrictive (‘just now’)"
+
+msgid "личный интеррогатив"
+msgstr "human interrogative"
+
+msgid "ассертив-интенсив"
+msgstr "assertive-intensive"
+
+msgid "лимитив («до»)"
+msgstr "limitive (‘[up] to’)"
+
+msgid "каритив («без»)"
+msgstr "caritive (‘without’)"
+
+msgid "нефинитное прошедшее"
+msgstr "non-finite past tense"
+
+msgid "инферентив"
+msgstr "inferential"
+
+msgid "рестриктив ‘только’"
+msgstr "restrictive (‘only’)"
+
+msgid "причинный кондиционал («раз»)"
+msgstr "reason conditional (‘once’)"
+
+msgid "пермиссив статических глаголов"
+msgstr "permissive (static verbs)"
+
+msgid "фреквентатив"
+msgstr "frequentative"
+
+msgid "динамизация"
+msgstr "dynamization of stative verbs"
+
+msgid "концессив (уступительность)"
+msgstr "concessive"
+
+msgid "кондиционал I"
+msgstr "realis conditional"
+
+msgid "настоящее время"
+msgstr "present tense"
+
+msgid "конверб («с тех пор как»)"
+msgstr "converb (‘since’)"
+
+msgid "эмфаза"
+msgstr "emphasis"
+
+msgid "неличный интеррогатив"
+msgstr "non-human interrogative"
+
+msgid "множественное число"
+msgstr "plural"
+
+msgid "неопределённость"
+msgstr "indefiniteness"
+
+msgid "счётный суффикс (при числительных)"
+msgstr "unit counting suffix (with numerals)"
+
+msgid "отрицательное деепричастие"
+msgstr "negative converb"
+
+msgid "латив"
+msgstr "lative"
+
+msgid "хабитуалис"
+msgstr "habitual"
+
+msgid "инструменталис"
+msgstr "instrumental"
+
+msgid "уступительность"
+msgstr "concessive"
+
+msgid "общий интеррогатив"
+msgstr "yes-no interrogative"
+
+msgid "номинализация возможности"
+msgstr "possibility nominalizer"
+
+msgid "конверб"
+msgstr "converb"
+
+msgid "депрециатив (сожаление)"
+msgstr "depreciative (regret)"
+
+msgid "прошедшее время"
+msgstr "past tense"
+
+msgid "конверб («пока (не)»)"
+msgstr "converb ('until, while’)"
+
+msgid "оптатив"
+msgstr "optative"
+
+msgid "конверб («каждый раз, когда»)"
+msgstr "converb (‘every time [when]’)"
+
+msgid "непрошедшее время"
+msgstr "nonpast tense"
+
+msgid "нефинитное будущее"
+msgstr "non-finite future"
+
+msgid "масдар"
+msgstr "masdar"
+
+msgid "номинализация"
+msgstr "nominalization"
+
+msgid "ассоциативная множественность"
+msgstr "associative plural"
+
+msgid "пермиссив динамических глаголов"
+msgstr "permissive for dynamic verbs"
+
+msgid "континуатив"
+msgstr "continuative"
+
+msgid "кондиционал II"
+msgstr "general conditional"
+
+msgid "целевой конверб (глагольная форма)"
+msgstr "purposive converb"
+
+msgid "имя места"
+msgstr "place nominalization"
+
+msgid "кунктатив («ещё не», только при отрицании) "
+msgstr "cunctative (‘not yet’, only with negation) "
+
+msgid "эмфаза (при императиве)"
+msgstr "emphasis (with imperative)"
+
+msgid "декларатив"
+msgstr "declarative"
+
+msgid "адвербиалис"
+msgstr "adverbial"
+
+msgid "нефинитный презенс (только у статических глаголов)"
+msgstr "non-finite present tense (static verbs only)"
+
+msgid "имперфектив (только у динамических глаголов)"
+msgstr "imperfective (dynamic verbs only)"
+
+msgid "диффисилитив («трудно»)"
+msgstr "difficilitive (‘difficult’)"
+
+msgid "рефактив"
+msgstr "refactive (‘again’)"
+
+msgid "инцептив"
+msgstr "inceptive"
+
+msgid "фасилитив («легко»)"
+msgstr "facilitive (‘easy’)"
+
+msgid "ямитив («уже»)"
+msgstr "iamitive (‘already’)"
+
+msgid "нимифактив, экцессив («слишком»)"
+msgstr "nimifactive, excessive (‘too much)"
+
+msgid "множественное число личное"
+msgstr "human plural"
+
+msgid "будущее время"
+msgstr "future tense"
+
+msgid "циркумферентив («вокруг»)"
+msgstr "circumferentive (‘around’)"
+
+msgid "симилятив («как будто»)"
+msgstr "similative (‘as if’)"
+
+msgid "номинализация способа"
+msgstr "manner nominalizer"
+
+msgid "локатив"
+msgstr "locative"
+
+msgid "связка"
+msgstr "copula"
+
+msgid "именная проформа"
+msgstr "nominal proform"
+
+msgid "квотатив (< сказать)"
+msgstr "quotative (< say)"
+
+msgid "филлер"
+msgstr "filler"
+
+msgid "частица"
+msgstr "particle"

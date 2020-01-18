@@ -714,6 +714,8 @@ class SentenceViewer:
             anas = ''
             anas_ru = ''
             parts = ''
+            lexs = ''
+            poss = ''
             for word in words:
                 # print(word)
                 if 'ana' in word and word['wtype'] == 'word':
@@ -734,15 +736,29 @@ class SentenceViewer:
                                 trans_ru = word['ana'][0]['trans_ru']
                                 anas_ru += gloss.replace(trans_en, trans_ru)
                                 anas_ru += ' '
+                        if 'lex_acute' in word['ana'][0]:
+                                lex = word['ana'][0]['lex_acute']
+                                lexs += lex
+                                lexs += ' '
+                        if 'gr.pos' in word['ana'][0]:
+                                pos = word['ana'][0]['gr.pos']
+                                poss += pos
+                                poss += ' '
             if parts:
                 text += '\t'
                 text += parts
-            if anas:
-                text += '\t'
-                text += anas
             if anas_ru:
                 text += '\t'
                 text += anas_ru
+            if lexs:
+                text += '\t'
+                text += lexs
+            if poss:
+                text += '\t'
+                text += poss
+            if anas:
+                text += '\t'
+                text += anas
             # print(text)
         return {'header': header, 'languages': {langView: {'text': text,
                                                            'highlighted_text': highlightedText}},
