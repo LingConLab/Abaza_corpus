@@ -1467,7 +1467,7 @@ msgid "Абазинские тексты приводятся в абазинс�
 msgstr "Abaza texts are presented in both the Abaza Cyrillic orthography and the Latin transcription developed by the Moscow research group for the study of Northwest Caucasian languages. The differences between the IPA and the system of transcription used in the corpus are as follows:"
 
 msgid "абруптивные согласные обозначены точкой над или под буквой (например, ṗ, ṭ, ḳ),"
-msgstr "ejective consonants are marked by a dot above or below the symbol (for example, ṗ, tт, kт),"
+msgstr "ejective consonants are marked by a dot above or below the symbol (for example, ṗ, ṭ, ḳ),"
 
 msgid "палатализованные согласные обозначены апострофом (например, g’, ʁ’, χ’),"
 msgstr "palatalized consonants are marked with an apostrophe (for example, g’, ʁ’, χ’),"
@@ -1490,11 +1490,71 @@ msgstr "This corpus is one of a group that uses the search platform “tsakorpus
 msgid "Поиск слова в орфографии"
 msgstr "Word search with Abaza Cyrillic orthography"
 
-msgid "В поле “слово (орф)” можно ввести словоформы, используя орфографическую запись. Например, по запросу апхьарта ‘школа’ можно найти все вхождения этой словоформы в текстах корпуса. Для абруптивных согласных в орфографической записи используется знак I (заглавное латинское i), например, пI, тI, кI."
-msgstr "Words and wordforms in the Cyrillic orthography are entered in the field “word (orth).”  For example, a search for the word апхьарта ‘school’ will result in all instances of this wordform in the corpus.  Capital Latin I is used in the orthography to indicate ejective consonants, for example, пI, тI, кI."
+msgid "В поле “слово (орф)” можно ввести словоформы, используя орфографическую запись. Например, по запросу "
+msgstr "Words and wordforms in the Cyrillic orthography are entered in the field “word (orth).”  For example, a search for the word "
 
-msgid "Слова можно искать, используя регулярные выражения (подробнее см. в “Справке”). Например, знак ? обозначает “любой символ”, знак * обозначает “любое количество любых символов”. Так, по запросу ла в текущей версии корпуса можно найти одно вхождение слова ла ‘собака’; по запросу ла? найдется слово лан ‘ее мать’; по запросу ла* найдутся слова ла ‘собака’, лан ‘ее мать’, лара ‘она’, лаща ‘ее брат’ и др. Регистр не влияет на результаты поиска. "
-msgstr "Words can be searched for using regular expressions (for more detail see “Information”).  For example, the mark ? means “any symbol,” and the mark * signifies “any amount of symbols.”  Thus, a search for ла in the current version of the corpus will yield ла ‘dog’; a search for ла? will yield лан ‘ее мать’; and a search for ла* will turn up ла ‘dog’, лан ‘her mother’, лара ‘she’, лаща ‘her brother’ and more. Register does not affect the search results."
+msgid "апхьарта"
+msgstr "апхьарта"
+
+msgid " ‘школа’ можно найти все вхождения этой словоформы в текстах корпуса. Для абруптивных согласных в орфографической записи используется знак I (заглавное латинское i), например, пI, тI, кI."
+msgstr " ‘school’ will result in all instances of this wordform in the corpus.  Capital Latin I is used in the orthography to indicate ejective consonants, for example, пI, тI, кI."
+
+msgid "Слова можно искать, используя регулярные выражения (подробнее см. в “Справке”). Например, знак ? обозначает “любой символ”, знак * обозначает “любое количество любых символов”. Так, по запросу "
+msgstr "Words can be searched for using regular expressions (for more detail see “Information”).  For example, the mark ? means “any symbol,” and the mark * signifies “any amount of symbols.”  Thus, a search for "
+
+msgid "ла"
+msgstr "ла"
+
+msgid " в текущей версии корпуса можно найти одно вхождение слова "
+msgstr " in the current version of the corpus will yield "
+
+msgid "ла"
+msgstr "ла"
+
+msgid " ‘собака’; по запросу "
+msgstr " ‘dog’; a search for "
+
+msgid "ла?"
+msgstr "ла?"
+
+msgid " найдется слово "
+msgstr " will yield "
+
+msgid "лан"
+msgstr "лан"
+
+msgid " ‘ее мать’; по запросу "
+msgstr " ‘her mother’; and a search for "
+
+msgid "ла*"
+msgstr "ла*"
+
+msgid " найдутся слова "
+msgstr " will turn up "
+
+msgid "ла"
+msgstr "ла"
+
+msgid " ‘собака’, "
+msgstr " ‘dog’, "
+
+msgid "лан"
+msgstr "лан"
+
+msgid " ‘ее мать’, "
+msgstr " ‘her mother’, "
+
+msgid "лара"
+msgstr "лара"
+
+msgid " ‘она’, "
+msgstr " ‘she’, "
+
+msgid "лаща"
+msgstr "лаща"
+
+msgid " ‘ее брат’ и др. Регистр не влияет на результаты поиска. "
+msgstr " ‘her brother’ and more. Register does not affect the search results."
 
 msgid "Это же поле используется для поиска по русскому переводу. Перед тем, как ввести слово по-русски, не забудьте поменять абазинский на русский в поле “Язык/слой”."
 msgstr "This field is also used for searches by Russian translation.  Before entering a Russian word, switch the “Language/Layer” field from “Abaza” to “Russian”."
@@ -1502,8 +1562,14 @@ msgstr "This field is also used for searches by Russian translation.  Before ent
 msgid "Поиск слова в транскрипции"
 msgstr "Word search with Latin transcription"
 
-msgid "В поле “слово (транс)” можно ввести словоформы, используя запись в транскрипции. Например, по запросу ápχ’arta ‘школа’ можно найти все вхождения этой словоформы в текстах корпуса. Наличие/отсутствие знака ударения над гласными не влияет на результаты поиска. Запросы с использованием регулярных выражений работают так же, как в поле “слово (орф)”."
-msgstr "In the field “word (trans)” it is possible to search by wordform using the Latin transcription.  For example, a search of the word aмpχ’arta ‘school’ will turn up all entries of this word in the corpus.  The presence or absence of the stress mark does not affect the search results.  Searches using regular expressions works the same as in the field “word (orth).”"
+msgid "В поле “слово (транс)” можно ввести словоформы, используя запись в транскрипции. Например, по запросу "
+msgstr "In the field “word (trans)” it is possible to search by wordform using the Latin transcription.  For example, a search of the word "
+
+msgid "apχ’arta"
+msgstr "apχ’arta"
+
+msgid " ‘школа’ можно найти все вхождения этой словоформы в текстах корпуса. Наличие/отсутствие знака ударения над гласными не влияет на результаты поиска. Запросы с использованием регулярных выражений работают так же, как в поле “слово (орф)”."
+msgstr " ‘school’ will turn up all entries of this word in the corpus.  The presence or absence of the stress mark does not affect the search results.  Searches using regular expressions works the same as in the field “word (orth).”"
 
 msgid "Поиск по глоссам"
 msgstr "Search with glosses"
@@ -1550,8 +1616,14 @@ msgstr "Students and faculty of HSE University and RSUH D. A. Arakelova, P. M. A
 msgid "Тексты подготовлены к публикации в виде корпуса А. Б. Пановой и А. Д. Сорокиной. Дальнейшая техническая работа над корпусом выполнена Е. О. Сокур."
 msgstr "The texts were prepared for publication in the form of the corpus by A. B. Panova and A. D. Sorokina. Further technical work was done by E. O. Sokur."
 
-msgid "Проект Устного корпуса абазинского языка поддерживается Международной лабораторией языковой конвергенции Высшей Школы Экономики. Корпус создан в рамках Программы фундаментальных исследований Национального исследовательского университета «Высшая школа экономики» (НИУ ВШЭ) и с использованием средств субсидии в рамках государственной поддержки ведущих университетов Российской Федерации «5-100»."
-msgstr "The Spoken corpus of Abaza project is supported by the Linguistic Convergence Laboratory at the Higher School of Economics. The corpus was created within the framework of the HSE University Basic Research Program and funded by the Russian Academic Excellence Project '5-100'."
+msgid "Устный корпус абазинского языка поддерживается"
+msgstr "The Spoken corpus of Abaza is supported by"
+
+msgid "Международной лабораторией языковой конвергенции Высшей Школы Экономики"
+msgstr "the Linguistic Convergence Laboratory at the Higher School of Economics"
+
+msgid "Корпус создан в рамках Программы фундаментальных исследований Национального исследовательского университета «Высшая школа экономики» (НИУ ВШЭ) и с использованием средств субсидии в рамках государственной поддержки ведущих университетов Российской Федерации «5-100»."
+msgstr "The corpus was created within the framework of the HSE University Basic Research Program and funded by the Russian Academic Excellence Project '5-100'."
 
 msgid "Контакты"
 msgstr "Contacts"
