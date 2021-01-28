@@ -384,7 +384,10 @@ def update_expanded_contexts(context, neighboringIDs):
 
 @app.route('/')
 def start_page():
-    return render_template('start_page.html')   
+    return render_template('start_page.html',
+                            locale=get_locale(),
+                            locales=settings['interface_languages'])     
+
 
 
 @app.route('/search')
@@ -1696,13 +1699,6 @@ def set_locale(lang=''):
         return
     set_session_data('locale', lang)
     return ""
-
-@app.route('/set_locale_start/<lang>')
-def set_locale_start(lang=''):
-    if lang not in settings['interface_languages']:
-        return
-    set_session_data('locale', lang)
-    return redirect("https://linghub.ru/spoken_abaza/")
 
 
 @app.route('/help_dialogue')
